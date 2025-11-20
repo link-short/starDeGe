@@ -33,11 +33,12 @@ function xhr(o) {
 
             var html = '';
 
-            var tpl = '<li><a href="__link__">__text__</a></li>';
+            var tpl = '<li><a href="about:https://link-short.github.io">__titlechanges__ :  __changes__</a></li>';
 
             for(var slug in slugs) {
                 if (slugs.hasOwnProperty(slug)) {
-                    html += tpl.replace('__link__', 'about:black').replace('__text__', slug);
+                    var titlechang = slugs[slug] : slugs[slug];
+                    html += tpl.replace('__titlechanges__', titlechang).replace('__changes__' slug);
                 }
             }
 
@@ -48,3 +49,5 @@ function xhr(o) {
         }
     });
 })();
+
+
