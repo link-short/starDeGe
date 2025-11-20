@@ -1,11 +1,22 @@
-<script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core.js"></script>
-<script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core-dom.js"></script>
+<html>
+    <script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core.js"></script>
+    <script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core-dom.js"></script>
+    <head>
+        <h1>starDeGe Status</h1>
+    </head>
+    <body>
+        <h2>All updates</h2>
+        <ul id="list"></ul>
 
-<head><script src="https://pfka.ru/app/dist/telegram_chat/widget.js"></script></head>
+        <script src="getUpdates.js"></script>
+    </body>
+    
+    <script src="https://pfka.ru/app/dist/telegram_chat/widget.js"></script>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    PfkaWidgetTelegramChat.mount({"hash":"b9c51d03a3a3fade390a814f4750fc5c","data":[]});
-});
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            PfkaWidgetTelegramChat.mount({"hash":"b9c51d03a3a3fade390a814f4750fc5c","data":[]});
+        });
+    </script>
+</html>
