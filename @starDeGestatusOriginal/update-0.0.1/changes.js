@@ -33,11 +33,11 @@ function xhr(o) {
 
             var html = '';
 
-            var tpl = '<li><a href="about:https://link-short.github.io">__titlechanges__ :  __changes__</a></li>';
+            var tpl = '<li><a href="__titlechanges__">__titlechanges__ :  __changes__</a></li>';
 
             for(var slug in slugs) {
                 if (slugs.hasOwnProperty(slug)) {
-                    var titlechang = slugs[slug] : slugs[slug];
+                    var titlechang = slugs[slug];
                     html += tpl.replace('__titlechanges__', titlechang).replace('__changes__' slug);
                 }
             }
