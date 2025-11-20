@@ -1,1 +1,13 @@
 !!!lol!!!
+<script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core.js"></script>
+<script crossorigin src="https://pfka.ru/js/widget-telegram-chat/widget-core-dom.js"></script>
+
+В пределах тегов <head></head> подключите вызов виджета. Если вы уже делали это раньше и у вас на сайте несколько виджетов с такого типа, то повторно ничего размещать не нужно, поскольку код вызова виджета единый для всех виджетов одного типа.
+<script src="https://pfka.ru/app/dist/telegram_chat/widget.js"></script>
+
+В пределах тегов <head></head> подключите код виджета. Допускается подключение и в любом другом месте в пределах тегов <body></body>.
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    PfkaWidgetTelegramChat.mount({"hash":"b9c51d03a3a3fade390a814f4750fc5c","data":[]});
+});
+</script>
