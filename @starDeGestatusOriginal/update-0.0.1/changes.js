@@ -33,12 +33,12 @@ function xhr(o) {
 
             var html = '';
 
-            var tpl = '<li><a href="__titlechanges__">__titlechanges__ :  __changes__</a></li>';
+            var tpl = '<li><a href="__link__">__text__</a></li>';
 
             for(var slug in slugs) {
                 if (slugs.hasOwnProperty(slug)) {
-                    var titlechang = slugs[slug];
-                    html += tpl.replace('__titlechanges__', titlechang).replace('__changes__' slug);
+                    var url = slugs[slug].indexOf('https') == 0? slugs[slug] : 'http://link-short.github.io/starDeGe/@starDeGestatusOriginal/update-0.0.1/' + slugs[slug];
+                    html += tpl.replace('__link__', url).replace('__text__', slug);
                 }
             }
 
