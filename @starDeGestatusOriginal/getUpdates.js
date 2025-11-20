@@ -33,7 +33,7 @@ function xhr(o) {
 
             var html = '';
 
-            var tpl = '<li>__link__ __text__</li>';
+            var tpl = '<li><a href="__link__">__text__</a></li>';
 
             for(var slug in slugs) {
                 if (slugs.hasOwnProperty(slug)) {
